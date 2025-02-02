@@ -151,7 +151,7 @@ TEST_CASE("IQR - 7 different elements") {
 }
 ```
 
-![Screenshot 2025-02-02 083139.png](attachment:18a1c253-01b0-4388-b067-2fe3c5b4d99a:Screenshot_2025-02-02_083139.png)
+Check SCREENSHOT ->
 
 Changed one of the approximations to 4 to test if it catches the error:
 
