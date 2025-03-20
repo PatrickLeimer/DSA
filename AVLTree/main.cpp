@@ -61,6 +61,9 @@ void parseLine(const string& line, AVLTree* tree)
                 if (temp == nullptr) {
                     cout << "unsuccessful" << endl;
                 }
+                if (temp != nullptr) {
+                cout << temp->name << endl;
+                }
             }
             else
             {
@@ -101,7 +104,7 @@ void parseLine(const string& line, AVLTree* tree)
     }
     else
     {
-        cerr << "Unknown command: " << command << endl;
+        cerr << "unsuccessful" << endl;
     }
 }
 
@@ -111,13 +114,14 @@ int main()
     cin >> N;
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
-    AVLTree* tree = new AVLTree();
+    AVLTree *tree = new AVLTree();
 
     for (int i = 0; i < N; i++)
     {
         string line;
         getline(cin, line);
         parseLine(line, tree);
+
 
     }
     delete tree;

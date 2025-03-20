@@ -181,7 +181,7 @@ TreeNode* AVLTree::insertNAMEID(TreeNode* r, string name, string id) {
 
     // Validate input //Check with regex or check if it's unique id -> searchID(r, id) != nullptr
     if (!(inputValidation(id, name)) || searchID(r, id) != nullptr) {
-        cout << "unsuccessful" << searchID(r, id)  << endl;
+        cout << "unsuccessful" << endl;
         return r; // if not validated
     }
 
@@ -249,7 +249,6 @@ TreeNode* AVLTree::searchID(TreeNode* r, const string& ID) {
      */
     if (r == nullptr || stoi(ID) == stoi(r->id)) {
         if(r != nullptr) {
-            cout << r->name << endl;
             return r;
         } else {
             return nullptr;

@@ -10,6 +10,7 @@
 
 using namespace std;
 
+bool inputValidation(const string& ID, const string& name);
 
 struct TreeNode {
     int h;
